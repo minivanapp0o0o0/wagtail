@@ -30,6 +30,9 @@
                         <li>{% formattedfield form.email %}</li>
                         <li>{% formattedfield form.first_name %}</li>
                         <li>{% formattedfield form.last_name %}</li>
+                        {% if form.phone %}
+                            <li>{% formattedfield form.phone %}</li>
+                        {% endif %}
                         {% block extra_fields %}{% endblock extra_fields %}
                         {% if form.password1 %}
                             <li>{% formattedfield form.password1 %}</li>
